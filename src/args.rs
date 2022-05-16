@@ -22,4 +22,12 @@ pub struct ranArgs {
     /// Change inline print delimiter
     #[clap(short = 'd', long, default_value = " ")]
     pub delimiter: String,
+
+    /// Print delimiter after number
+    #[clap(short = 'a', long = "delimiter-after")]
+    pub delimiter_after: bool,
+
+    /// Print delimiter before number
+    #[clap(short = 'b', long = "delimiter-before")]
+    pub delimiter_before: bool,
 }
