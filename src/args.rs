@@ -4,7 +4,7 @@ use clap::Parser;
 #[derive(Parser)]
 #[clap(author, version, about, long_about = None)]
 #[clap(propagate_version = true)]
-pub struct ranArgs {
+pub struct RanArgs {
     #[clap(short = 'm', long, default_value_t = 1)]
     pub min: i32,
 
