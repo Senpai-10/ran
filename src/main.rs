@@ -1,11 +1,11 @@
 mod args;
 
-use args::ranArgs;
+use args::RanArgs;
 use clap::Parser;
 use rand::Rng;
 
 fn main() {
-    let cli = ranArgs::parse();
+    let cli = RanArgs::parse();
 
     if !cli.inline {
         for _ in 0..cli.count {
