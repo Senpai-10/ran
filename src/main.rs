@@ -1,3 +1,10 @@
+mod args;
+
+use args::ranArgs;
+use clap::Parser;
+
 fn main() {
-    println!("Hello, world!");
+    let cli = ranArgs::parse();
+
+    println!("min: {}\nmax: {}", cli.min, cli.max);
 }
