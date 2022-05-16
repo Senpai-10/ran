@@ -1,4 +1,4 @@
-# randome number genorter cli
+# random number genorter cli
 
 ## install
 
