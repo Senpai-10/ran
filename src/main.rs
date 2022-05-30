@@ -7,6 +7,11 @@ use rand::Rng;
 fn main() {
     let cli = RanArgs::parse();
 
+    if cli.min == cli.max {
+        println!("Min and Max can't be the same number!");
+        std::process::exit(1);
+    }
+
     if !cli.inline {
         for _ in 0..cli.count {
             let random_number: i32 = rand::thread_rng().gen_range(cli.min..cli.max);
